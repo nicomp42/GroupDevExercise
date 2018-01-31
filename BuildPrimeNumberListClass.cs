@@ -13,14 +13,14 @@ namespace GroupDevExercise {
     /// <summary>
     /// Build a list of prime numbers
     /// </summary>
-    class BuildPrimeNumberListClass {
+    class BuildPrimeNumberListClass : TestBehavior {
 
         /// <summary>
         /// Test the BuildPrimeNumberList method
         /// </summary>
         /// <param name="verbose">True if the method should print test results as they are processed</param>
         /// <returns>true if all tests passed, false otherwise.</returns>
-        public static Boolean Test(Boolean verbose) {
+        override public Boolean Test(Boolean verbose) {
             return false;
         }
 
@@ -32,7 +32,11 @@ namespace GroupDevExercise {
         /// <param name="primeNumberList">Where to build the list</param>
         /// <param name="length">The number of primes to be added to the list, first number must always be 2</param>
         public static void BuildPrimeNumberList(List<long> primeNumberList, int length) {
-
+            long num = 2;
+            for (int i = 0; i < length; i++) {
+                if (IsPrimeClass.IsPrime(num)) { primeNumberList.Add(num); }
+                num++;
+            }
         }
     }
 }

@@ -13,7 +13,7 @@ namespace GroupDevExercise {
     /// <summary>
     /// Count palindromes where both are prime
     /// </summary>
-    class CountPalindromesWhereBothArePrimeClass {
+    class CountPalindromesWhereBothArePrimeClass : TestBehavior {
 
 
         /// <summary>
@@ -21,7 +21,7 @@ namespace GroupDevExercise {
         /// </summary>
         /// <param name="verbose">True if the method should print test results as they are processed</param>
         /// <returns>true if all tests passed, false otherwise.</returns>
-        public static Boolean Test(Boolean verbose) {
+        override public Boolean Test(Boolean verbose) {
             return false;
         }
 
