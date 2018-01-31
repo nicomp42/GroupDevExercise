@@ -19,6 +19,12 @@ namespace GroupDevExercise {
         /// <param name="verbose">True if the method should print test results as they are processed</param>
         /// <returns>true if all tests passed, false otherwise.</returns>
         override public Boolean Test(Boolean verbose) {
+            //
+
+
+            if (IsPrime(15485863) == true && IsPrime(2) == true && IsPrime(130) == false) {
+                return true;
+            }
             return false;
         }
 
@@ -29,7 +35,13 @@ namespace GroupDevExercise {
         /// <param name="num">The number to be checked. Assumed to be > 1.</param>
         /// <returns>True if num is prime, false otherwise</returns>
         public static Boolean IsPrime(long num) {
-            return false;
+
+            Boolean primeStatus = true;
+            for (int i = 2; i <= Math.Sqrt(num); i++) {
+                if ((num % i) == 0) return false;
+            }
+
+            return primeStatus;
         }
     }
 }
