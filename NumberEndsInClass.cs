@@ -19,17 +19,7 @@ namespace GroupDevExercise {
         /// <param name="verbose">True if the method should print test results as they are processed</param>
         /// <returns>true if all tests passed, false otherwise.</returns>
         override public Boolean Test(Boolean verbose) {
-            int count = 0, testsFailed = 0, testsPassed = 0;
-            for (long i = 1; i < 100; i++)
-            {
-                count++; count %= 10;
-                if (NumberEndsIn(i, count) == true) {
-                    testsPassed++;
-                } else {
-                    testsFailed++;
-                }
-            }
-            return ((testsFailed > 0) ? false : true);
+            return false;
         }
 
         /// <summary>

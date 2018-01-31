@@ -20,16 +20,7 @@ namespace GroupDevExercise {
         /// <param name="verbose">True if the method should print test results as they are processed</param>
         /// <returns>true if all tests passed, false otherwise.</returns>
         override public Boolean Test(Boolean verbose) {
-            int testCasesPassed = 0, testCasesFailed = 0;
-            long[] testCasesArePalindromes = new long[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 11,22,33,111 };
-            long[] testCasesAreNotPalindromes = new long[] { 12, 98, 100, 1000, 9998 };
-            foreach (long l in testCasesArePalindromes) {
-                if (IsPalindrome(l)) { testCasesPassed++; } else { testCasesFailed++; }
-            }
-            foreach (long l in testCasesAreNotPalindromes) {
-                if (!IsPalindrome(l)) { testCasesPassed++; } else { testCasesFailed++; }
-            }
-            return (testCasesFailed > 0 ? false : true);
+            return false;
         }
 
         /// <summary>
