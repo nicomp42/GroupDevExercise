@@ -49,9 +49,11 @@
     <Compile Include="CountPalindromesWhereBothArePrimeClass.cs" />
     <Compile Include="IsPalindromeClass.cs" />
     <Compile Include="IsPrimeClass.cs" />
+    <Compile Include="ITestBehavior.cs" />
     <Compile Include="NumberEndsInClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
