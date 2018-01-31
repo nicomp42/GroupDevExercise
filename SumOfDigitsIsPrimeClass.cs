@@ -1,8 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*****************************************
+ * C# / VS in-class group development exercise
+ * Posted on GitHub
+ * Bill Nicholson and students
+ * nicholdw@ucmail.uc.edu
+ * ***************************************/
+
+using System;
 
 namespace GroupDevExercise
 {
