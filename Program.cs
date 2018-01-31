@@ -37,6 +37,7 @@ namespace GroupDevExercise {
             Console.WriteLine(CountEndsInClass.CountEndsIn(primeNumberList, 1) + " end in 1");
             Console.WriteLine(CountEndsInClass.CountEndsIn(primeNumberList, 3) + " end in 3");
             Console.WriteLine(CountEndsInClass.CountEndsIn(primeNumberList, 7) + " end in 7");
+            Console.WriteLine(CountEndsInClass.CountEndsIn(primeNumberList, 9) + " end in 9");
             Console.WriteLine(CountPalindromesClass.CountPalindromes(primeNumberList) + " are palindromes.");
             Console.WriteLine(CountPalindromesWhereBothArePrimeClass.CountPalindromesWhereBothArePrime(primeNumberList) + " are palindromes and the palindrome is also prime");
             Console.WriteLine(CountSumOfDigitsIsPrimeClass.CountSumOfDigitsIsPrime(primeNumberList) + " result in a prime when their digits are summed.");
