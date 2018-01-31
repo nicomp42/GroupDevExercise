@@ -26,9 +26,9 @@ namespace GroupDevExercise {
         /// </summary>
         /// <param name="list">The list of numbers to process</param>
         /// <returns>The count of integers in list that are palindromws</returns>
-        public static Boolean CountPalindromes(List<long> list)  {
+        public static long  CountPalindromes(List<long> list)  {
 
-            return false;
+            return 0;
         }
     }
 }
