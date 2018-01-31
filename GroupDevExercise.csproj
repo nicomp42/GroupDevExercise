@@ -43,6 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuildPrimeNumberListClass.cs" />
+    <Compile Include="CountEndsInClass.cs" />
+    <Compile Include="CountPalindromesClass.cs" />
+    <Compile Include="CountPalindromesWhereBothArePrimeClass.cs" />
+    <Compile Include="IsPalindromeClass.cs" />
+    <Compile Include="IsPrimeClass.cs" />
+    <Compile Include="NumberEndsInClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
