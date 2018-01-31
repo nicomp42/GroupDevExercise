@@ -4,7 +4,7 @@
  * Bill Nicholson and students
  * nicholdw@ucmail.uc.edu
  * ***************************************/
-   
+
 using System;
 
 namespace GroupDevExercise {
@@ -44,10 +44,9 @@ namespace GroupDevExercise {
             return ((testsFailed > 0) ? false : true);
         }
 
-
         /// <summary>
         /// Check an integer for primeness.
-        /// 1 is not prime. 2 is prime.
+        /// Notes: 1 is neither prime nor non-prime. 2 is prime.
         /// </summary>
         /// <param name="num">The number to be checked. Assumed to be > 1.</param>
         /// <returns>True if num is prime, false otherwise</returns>
