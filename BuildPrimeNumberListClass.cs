@@ -33,9 +33,19 @@ namespace GroupDevExercise {
         /// <param name="length">The number of primes to be added to the list, first number must always be 2</param>
         public static void BuildPrimeNumberList(List<long> primeNumberList, int length) {
             long num = 2;
+            int count = 0;
             for (int i = 0; i < length; i++) {
-                if (IsPrimeClass.IsPrime(num)) { primeNumberList.Add(num); }
+                if (IsPrimeClass.IsPrime(num) == true) {
+
+                    primeNumberList.Add(num);
+
+                    //Console.WriteLine(primeNumberList[count]);
+                    //count++;
+
+                }
+
                 num++;
+
             }
         }
     }
