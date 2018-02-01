@@ -35,16 +35,16 @@ namespace GroupDevExercise {
 
             List<bool> testResults = new List<bool>();
 
-            testResults.Add(CountEndsIn(numberList, 4) == 2);
-            testResults.Add(CountEndsIn(numberList, 3) == 2);
             testResults.Add(CountEndsIn(numberList, 0) == 2);
             testResults.Add(CountEndsIn(numberList, 1) == 2);
-            testResults.Add(CountEndsIn(numberList, 5) == 1);
-            testResults.Add(CountEndsIn(numberList, 9) == 1);
             testResults.Add(CountEndsIn(numberList, 2) == 0);
+            testResults.Add(CountEndsIn(numberList, 3) == 2);
+            testResults.Add(CountEndsIn(numberList, 4) == 2);
+            testResults.Add(CountEndsIn(numberList, 5) == 1);
+            testResults.Add(CountEndsIn(numberList, 6) == 0);
             testResults.Add(CountEndsIn(numberList, 7) == 1);
             testResults.Add(CountEndsIn(numberList, 8) == 1);
-
+            testResults.Add(CountEndsIn(numberList, 9) == 1);
             return !testResults.Contains(false);
         }
 
