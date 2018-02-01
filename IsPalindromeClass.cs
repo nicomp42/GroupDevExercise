@@ -20,6 +20,10 @@ namespace GroupDevExercise {
         /// <param name="verbose">True if the method should print test results as they are processed</param>
         /// <returns>true if all tests passed, false otherwise.</returns>
         override public Boolean Test(Boolean verbose) {
+            if (IsPalindrome(20*10+2) == true && IsPalindrome(20*10-2) == false)
+            {
+                return true;
+            }
             return false;
         }
 
