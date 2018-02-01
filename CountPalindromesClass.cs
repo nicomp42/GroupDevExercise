@@ -40,7 +40,7 @@ namespace GroupDevExercise {
 
             if (CountPalindromes(L5) != 3) return false;
 
-            //test number 6 will break because -767 should be a palindrome but is not 
+            //this will fail
             if (CountPalindromes(L6) != 2) return false;
 
             if (CountPalindromes(L7) != 1) return false;
