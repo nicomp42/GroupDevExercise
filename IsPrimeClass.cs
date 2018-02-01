@@ -10,7 +10,7 @@ using System;
 namespace GroupDevExercise {
     /// <summary>
     /// Check to see if a number is prime
-    /// Ryand and Matt did this.
+    /// Ryan and Matt did this.
     /// </summary>
     class IsPrimeClass : TestBehavior {
 
