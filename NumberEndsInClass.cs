@@ -29,6 +29,8 @@ namespace GroupDevExercise
             testResults.Add(NumberEndsIn(753224, 4) == true);
             testResults.Add(NumberEndsIn(1, 4) == false);
             testResults.Add(NumberEndsIn(0, 0) == true);
+            testResults.Add(NumberEndsIn(9223372036854775807, 7));
+            testResults.Add(NumberEndsIn(-9223372036854775808, 8));
             testResults.Add(NumberEndsIn(-56325, 5) == true);
             testResults.Add(NumberEndsIn(2350, 0) == true);
             testResults.Add(NumberEndsIn(84, 4) == true);
@@ -44,6 +46,13 @@ namespace GroupDevExercise
         /// <returns>True if num ends in digit, false otherwise</returns>
         public static Boolean NumberEndsIn(long num, int digit)
         {
+            if(num == long.MinValue)
+            {
+                if (digit == 8)
+                    return true;
+                else
+                    return false;
+            }
             num = Math.Abs(num);
             return num % 10 == digit;
         }
