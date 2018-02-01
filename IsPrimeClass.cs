@@ -10,7 +10,7 @@ using System;
 namespace GroupDevExercise {
     /// <summary>
     /// Check to see if a number is prime
-    /// Ryand and Matt did this.
+    /// Ryan and Matt did this.
     /// </summary>
     class IsPrimeClass : TestBehavior {
 
@@ -21,9 +21,10 @@ namespace GroupDevExercise {
         /// <returns>true if all tests passed, false otherwise.</returns>
         override public Boolean Test(Boolean verbose) {
 
-            if (IsPrime(15485863) == true && IsPrime(2) == true && IsPrime(130) == false) {
+            if (IsPrime(15485863) == true && IsPrime(2) == true && IsPrime(130) == false && IsPrime(0) == false) {
                 return true;
             }
+
             return false;
         }
 
@@ -35,10 +36,13 @@ namespace GroupDevExercise {
         /// <returns>True if num is prime, false otherwise</returns>
         public static Boolean IsPrime(long num) {
 
+            if (num == 0) { return false; }
+            if (num == 1) { return false; }
+            if (num < 0) { return false; }
+
             Boolean primeStatus = true;
             for (int i = 2; i <= Math.Sqrt(num); i++) {
 
-                if (num == 1 || num == 0 || num < 0) { return false;  }
                 if ((num % i) == 0) { return false; }
 
             }
