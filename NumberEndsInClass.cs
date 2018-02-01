@@ -6,20 +6,34 @@
  * ***************************************/
 
 using System;
+using System.Collections.Generic;
 
-namespace GroupDevExercise {
+namespace GroupDevExercise
+{
     /// <summary>
     /// Check a number to see if it ends in a particular digit
     /// </summary>
-    class NumberEndsInClass : TestBehavior {
+    class NumberEndsInClass : TestBehavior
+    {
 
         /// <summary>
         /// Test the numberEndsIn method
         /// </summary>
         /// <param name="verbose">True if the method should print test results as they are processed</param>
         /// <returns>true if all tests passed, false otherwise.</returns>
-        override public Boolean Test(Boolean verbose) {
-            return false;
+        override public Boolean Test(Boolean verbose)
+        {
+            List<bool> testResults = new List<bool>();
+
+            testResults.Add(NumberEndsIn(56325, 4) == false);
+            testResults.Add(NumberEndsIn(753224, 4) == true);
+            testResults.Add(NumberEndsIn(1, 4) == false);
+            testResults.Add(NumberEndsIn(0, 0) == true);
+            testResults.Add(NumberEndsIn(-56325, 5) == true);
+            testResults.Add(NumberEndsIn(2350, 0) == true);
+            testResults.Add(NumberEndsIn(84, 4) == true);
+
+            return !testResults.Contains(false);
         }
 
         /// <summary>
@@ -28,9 +42,10 @@ namespace GroupDevExercise {
         /// <param name="num">the integer to check</param>
         /// <param name="end">the digit to check for</param>
         /// <returns>True if num ends in digit, false otherwise</returns>
-        public static Boolean NumberEndsIn(long num, int digit) {
-            int tmpDigit =  (int)(num - ((num / 10) * 10)); 
-            return tmpDigit == digit ? true: false;
+        public static Boolean NumberEndsIn(long num, int digit)
+        {
+            num = Math.Abs(num);
+            return num % 10 == digit;
         }
     }
 }
