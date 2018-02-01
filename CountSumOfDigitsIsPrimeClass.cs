@@ -19,28 +19,29 @@ namespace GroupDevExercise
         override public Boolean Test(Boolean verbose)
         {
 
-            List<long> L1 = new List<long>() { 13, 468, 272 };
-            List<long> L2 = new List<long>() { 822, 737, 298 };
-            List<long> L3 = new List<long>() { 234, 19, 1893 };
-            List<long> L4 = new List<long>() { 34, 74, 90 };
-            List<long> L5 = new List<long>() { 57, 2872, 490};
-            List<long> L6 = new List<long>() { 76, 89, 45 };
+            List<long> L1 = new List<long>() { 13};
+            List<long> L2 = new List<long>() { 822, 737, 298, 234, 19, 1893 };
+            List<long> L3 = new List<long>() { 0, 0, 0 };
+            List<long> L4 = new List<long>() {};
+            List<long> L5 = new List<long>() { 28768376625, 863462783, 82368732, 28768376625, 863462783, 82368732, 28768376625, 863462783, 82368732, 28768376625, 863462783, 82368732, 28768376625, 863462783, 82368732};
+            List<long> L6 = new List<long>() { -76, 89, 45 };
             List<long> L7 = new List<long>() { 269, 59, 11 };
             List<long> L8 = new List<long>() { 7, 139, 83};
             List<long> L9 = new List<long>() { 421, 277, 67 };
             List<long> L10 = new List<long>() { 331, 19, 2287 };
 
-            if (CountSumOfDigitsIsPrime(L1) != 1) return false;
+            if (CountSumOfDigitsIsPrime(L1) != 0) return false;
 
             if (CountSumOfDigitsIsPrime(L2) != 2) return false;
 
+            //this line breaks the test because 0 should return as not prime but returns as prime according to isPrime()
             if (CountSumOfDigitsIsPrime(L3) != 0) return false;
 
-            if (CountSumOfDigitsIsPrime(L4) != 2) return false;
+            if (CountSumOfDigitsIsPrime(L4) != 0) return false;
 
-            if (CountSumOfDigitsIsPrime(L5) != 2) return false;
+            if (CountSumOfDigitsIsPrime(L5) != 5) return false;
 
-            if (CountSumOfDigitsIsPrime(L6) != 2) return false;
+            if (CountSumOfDigitsIsPrime(L6) != 1) return false;
 
             if (CountSumOfDigitsIsPrime(L7) != 2) return false;
 
