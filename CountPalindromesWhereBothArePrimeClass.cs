@@ -22,6 +22,15 @@ namespace GroupDevExercise {
         /// <param name="verbose">True if the method should print test results as they are processed</param>
         /// <returns>true if all tests passed, false otherwise.</returns>
         override public Boolean Test(Boolean verbose) {
+            List<long> numList = new List<long>();
+            for (int i = 0; i < 1000; i++)
+            {
+                numList.Add(i);
+            }
+            if (CountPalindromesWhereBothArePrime(numList) > 0)
+            {
+                return true;
+            }
             return false;
         }
 
@@ -31,9 +40,17 @@ namespace GroupDevExercise {
         /// </summary>
         /// <param name="list">The list of integers to process</param>
         /// <returns>the count</returns>
-        public static int CountPalindromesWhereBothArePrime(List<long> list) {
-
-            return 0;
+        public static int CountPalindromesWhereBothArePrime(List<long> list)
+        {
+            int palindromePrimeCount = 0;
+            foreach (long num in list)
+            {
+                if (IsPrimeClass.IsPrime(num) == true && IsPalindromeClass.IsPalindrome(num) == true)
+                {
+                    palindromePrimeCount++;
+                }
+            }
+            return palindromePrimeCount;
         }
     }
 }

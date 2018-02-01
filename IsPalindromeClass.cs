@@ -3,6 +3,7 @@
  * Posted on GitHub
  * Bill Nicholson and students
  * nicholdw@ucmail.uc.edu
+ * Test cases added by Brandon Cruey
  * ***************************************/
 
 using System;
